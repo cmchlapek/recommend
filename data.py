@@ -1,7 +1,7 @@
 style_periods = ['medieval,' 'renaissance', 'baroque', 'classical', 'romantic', 'twentieth-century', 'modern']
 
 
-//period, name, dates, nation, primary genres
+#period, name, dates, nation, primary genres
 composer_data = [['baroque', 'Johann Sebastian Bach', '1685-1750', 'Germany'],
 ['classical', 'Wolfgang Amadeus Mozart', '1756-1791', 'Austria'],
 [['classical', 'romantic'], 'Ludwig von Beethoven', '1770-1827', 'Austria'],
