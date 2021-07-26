@@ -1,5 +1,6 @@
 from data import *
 from linkedlist import LinkedList
+from node import Node
 
 print("Welcome to the composer recommendation app!")
 
@@ -51,10 +52,10 @@ while len(selected_style_period) == 0:
     ##after finding the selected style period, retrieve composer data here
         if select_style == 'y':
             selected_style = matching_styles[0]
-            print("Selected Style Period: " + selected_style)
+            print("Selected Style Period: " + selected_style.title() + " Period")
             composer_list_head = composer_list.get_head_node()
-            while composer_list_head is not None:
-                sublist_head = composer_list_head.get_valu().get_head_node()
+            while composer_list_head.get_next_node() is not None:
+                sublist_head = composer_list_head.get_value().get_head_node()
                 if sublist_head.get_value()[0] == selected_style:
                     while sublist_head.get_next_node() is not None:
                         print("-_-_-_-_-_-_-_-_-_-_-")
@@ -66,6 +67,6 @@ while len(selected_style_period) == 0:
                 composer_list_head = composer_list_head.get_next_node()
     ##ask user if they want to search for other restraunts
 
-            repeat = str(input("\nDo you want to see composers from a different style period? Enter y for yes or n for no.\n")).lower()
-            if repeat == 'y':
-                selected_style_period = ""
+        repeat = str(input("\nDo you want to see composers from a different style period? Enter y for yes or n for no.\n")).lower()
+        if repeat == 'y':
+            selected_style_period = ""

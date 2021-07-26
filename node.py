@@ -7,7 +7,7 @@ class Node:
         self.next_node = next_node
     
     def get_next_node(self):
-        return self.value
+        return self.next_node
 
     def get_value(self):
         return self.value

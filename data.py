@@ -1,4 +1,4 @@
-style_periods = ['medieval,' 'renaissance', 'baroque', 'classical', 'romantic', 'twentieth-century', 'modern']
+style_periods = ['medieval', 'renaissance', 'baroque', 'classical', 'romantic', 'twentieth-century', 'modern']
 
 
 #period, name, dates, nation, primary genres
@@ -12,13 +12,13 @@ composer_data = [['baroque', 'Johann Sebastian Bach', '1685-1750', 'Germany'],
 ['renaissance', 'Thomas Tallis', '1505-1585', 'England'],
 ['renaissance', 'Giovanni Perluigi Palestrina', '1525-1594', 'Italy'],
 ['renaissance', 'William Byrd', '1549-1623', 'England'],
-['baroque', 'John Downland', '1563-1626', 'England'],
+['baroque', 'John Dowland', '1563-1626', 'England'],
 ['baroque', 'Arcangelo Corelli', '1653-1713', 'Italy'],
 ['baroque', 'Claudio Giovanni Antonio Monteverdi', '1566-1643', 'Italy'],
 ['baroque', 'Henry Purcell', '1659-1695', 'England'],
 ['baroque', 'Antonio Vivaldi', '1678-1741', 'Italy'],
 ['baroque', 'Georg Philipp Telemann', '1681-1767', 'Germany'],
-['baroque', 'George Frideric Handel', '1685-1759', ['Germany', 'England']],
+['baroque', 'George Frideric Handel', '1685-1759', 'England and Germany'],
 ['baroque', 'Jean-Philippe Rameau', '1683-1764', 'France'],
 ['baroque', 'Giuseppe Domenico Scarlatti', '1685-1757', 'Italy'],
 ['classical', 'Christoph Willibald Ritter von Gluck', '1714-1787', 'Germany'],
@@ -55,7 +55,7 @@ composer_data = [['baroque', 'Johann Sebastian Bach', '1685-1750', 'Germany'],
 ['modern', 'John Adams', '1947-', 'U.S.'],
 ['modern', 'Philip Glass', '1937-', 'U.S.'],
 ['modern', 'Margaret Brouwer', '1940-', 'U.S.'],
-['modern,' 'Yihan Chen', '1994-', 'China'],
+['modern', 'Yihan Chen', '1994-', 'China'],
 ['modern', 'Steve Reich', '1936-', 'U.S.'],
 ['modern', 'Hans Abrahamsen', '1952-', 'Denmark'],
 ['modern', 'Thomas Ades', '1971-', 'England'],
