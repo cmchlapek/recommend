@@ -70,3 +70,7 @@ while len(selected_style_period) == 0:
             repeat = str(input("\nDo you want to see composers from a different style period? Enter y for yes or n for no.\n")).lower()
             if repeat == 'y':
                 selected_style_period = ""
+            else:
+                print("Thank you for using this app!")
+                selected_style_period = "000"
+                
