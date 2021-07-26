@@ -1,4 +1,4 @@
-style_periods = ['medieval', 'renaissance', 'baroque', 'classical', 'romantic', 'twentieth-century', 'modern']
+style_periods = ['renaissance', 'baroque', 'classical', 'romantic', 'twentieth-century', 'modern']
 
 
 #period, name, dates, nation, primary genres

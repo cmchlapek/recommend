@@ -65,8 +65,8 @@ while len(selected_style_period) == 0:
                         print("-_-_-_-_-_-_-_-_-_-_-")
                         sublist_head = sublist_head.get_next_node()
                 composer_list_head = composer_list_head.get_next_node()
-    ##ask user if they want to search for other restraunts
-
-        repeat = str(input("\nDo you want to see composers from a different style period? Enter y for yes or n for no.\n")).lower()
-        if repeat == 'y':
-            selected_style_period = ""
+            
+            ##ask user if they want to search for other restraunts
+            repeat = str(input("\nDo you want to see composers from a different style period? Enter y for yes or n for no.\n")).lower()
+            if repeat == 'y':
+                selected_style_period = ""
