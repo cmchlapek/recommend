@@ -16,7 +16,7 @@ class LinkedList:
         string_list = ""
         current_node = self.head_node
         while current_node:
-            string_list += str(current_node.value) + "/n"
+            string_list += str(current_node.value) + "\n"
             current_node = current_node.get_next_node()
         return string_list
     
