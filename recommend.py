@@ -27,8 +27,8 @@ selected_style_period = ""
 ##write code for user interaction
 while len(selected_style_period) == 0:
     user_input = str(input(
-        "\nFrom which style period would you like to find composers?\nType the first few letters and then hit Enter to search.\n".lower()
-    ))
+        "\nFrom which style period would you like to find composers?\nType the first few letters and then hit Enter to search.\n"
+    )).lower()
     ##search for user_input in style period data structures
     matching_styles = []
     style_list_head = style_list.get_head_node()
@@ -42,7 +42,28 @@ while len(selected_style_period) == 0:
         print(period)
 
     ##check if only one type of style name was found, as if user would like to stick with this input
-    
+    if len(matching_styles) == 1:
+        select_style = str(input(
+            "\nThe only matching style period from your search is " + matching_styles[0].title() + ". \nDo you want to see a list of " + matching_styles[0].title() + " composers? Enter y for yes or N for no.\n"
+        )).lower()
     ##after finding the selected style period, retrieve composer data here
-
+        if select_style == 'y':
+            selected_style = matching_styles[0]
+            print("Selected Style Period: " + selected_style)
+            composer_list_head = composer_list.get_head_node()
+            while composer_list_head is not None:
+                sublist_head = composer_list_head.get_valu().get_head_node()
+                if sublist_head.get_value()[0] == selected_style:
+                    while sublist_head.get_next_node() is not None:
+                        print("-_-_-_-_-_-_-_-_-_-_-")
+                        print("Name: " + sublist_head.get_value()[1])
+                        print("Dates: " + sublist_head.get_value()[2])
+                        print("Country: " + sublist_head.get_value()[3])
+                        print("-_-_-_-_-_-_-_-_-_-_-")
+                        sublist_head = sublist_head.get_next_node()
+                composer_list_head = composer_list_head.get_next_node()
     ##ask user if they want to search for other restraunts
+
+            repeat = str(input("\nDo you want to see composers from a different style period? Enter y for yes or n for no.\n")).lower()
+            if repeat == 'y':
+                selected_style_period = ""
