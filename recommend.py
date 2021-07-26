@@ -1,6 +1,8 @@
 from data import *
 from linkedlist import LinkedList
 
+print("Welcome to the composer recommendation app!")
+
 ##write code to insert style periods into a linked list from data.py
 def insert_style_periods():
     style_period_list = LinkedList()
